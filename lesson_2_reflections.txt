@@ -7,3 +7,28 @@ repository? What value do you think it offers?
 
 staging area decides what in current directory should be updates in the next
 commit. repository keeps track of the commits.
+
+3)How can you use the staging area to make sure you have one commit per logical
+change?
+
+Use git diff --staged
+
+4)What are some situations when branches would be helpful in keeping your
+history organized? How would branches help?
+
+Branches can be used to test new features while leaving the original working
+version intact. If the new features work, one could combine that at a later
+stage.
+
+5)How do the diagrams help you visualize the branch structure?
+
+Helps a lot! You can view the relationship between different branches. Makes the
+life a lot easier!
+
+git log --graph -oneline master branch1 branch2
+
+6)What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+After the merge, the overall modification from multiple files is recorded.
+Because the two branches become one.
